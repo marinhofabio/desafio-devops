@@ -2,13 +2,11 @@ from flask import Flask
 from flask import jsonify
 from flask import request
 
-
 app_name = 'comentarios'
 app = Flask(app_name)
 app.debug = True
 
 comments = {}
-
 
 @app.route('/api/comment/new', methods=['POST'])
 def api_comment_new():
@@ -34,7 +32,6 @@ def api_comment_new():
             'message': message,
             }
     return jsonify(response)
-
 
 @app.route('/api/comment/list/<content_id>')
 def api_comment_list(content_id):
