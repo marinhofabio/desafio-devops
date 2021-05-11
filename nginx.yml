@@ -1,0 +1,16 @@
+---
+
+- hosts: servers
+  user: fmarinho
+  become: yes
+  connection: ssh
+  gather_facts: false
+
+  tasks:
+  
+  - name: ENSURE THE NGINX SERVICE IS RUNNING 
+     service:
+       name: nginx
+       state: started
+
+...

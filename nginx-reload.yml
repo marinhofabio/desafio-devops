@@ -1,0 +1,15 @@
+---
+
+- hosts: servers
+  user: fmarinho
+  become: yes
+  connection: ssh
+  gather_facts: false
+
+  tasks:
+   
+  -  service:
+       name:  nginx
+       state: reloaded
+
+...
