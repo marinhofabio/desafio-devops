@@ -1,6 +1,6 @@
 FROM python:3.7.4-alpine3.10
 
-MAINTAINER Fabio Marinho <marinho.fabio@gmail.com>
+MAINTAINER Fabio Marinho do Nascimento <marinho.fabio@gmail.com>
 
 COPY requirements.txt /usr/src/app/requirements.txt
 
