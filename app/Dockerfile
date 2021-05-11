@@ -12,4 +12,4 @@ WORKDIR /usr/src/app
 
 CMD ["gunicorn", "--log-level", "debug", "--bind", ":8000", "--workers", "1", "api:app"]
 
-EXPOSE 8000/tcp
+EXPOSE 8000/tcp 8000/tcp
